@@ -1,0 +1,3 @@
+SELECT * 
+FROM bike
+ORDER BY id ASC;

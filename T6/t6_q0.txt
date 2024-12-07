@@ -1,0 +1,8 @@
+SELECT grape.id, grape.name, wine.id, wine.name, winery.name
+
+FROM grape
+JOIN contains ON grape.id = contains.grape_id
+JOIN wine ON contains.wine_id = wine.id 
+JOIN winery ON winery.id = wine.winery_id
+
+WHERE grape.color = 'blue'
